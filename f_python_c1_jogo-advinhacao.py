@@ -10,10 +10,16 @@ print("Voce digitou: ", chute)
 
 num_convert = int(chute)
 
-if(num_convert == num_sec):
+acertou = num_convert == num_sec
+maior   = num_convert > num_sec
+menor   = num_convert < num_sec
+
+if(acertou):
   print("Voce acertou!")
 else:
-  print("Voce errou!")
-  
-  
+  if(maior):
+    print("Voce errou! O seu chute foi maior que o numero secreto")
+  elif(menor):
+    print("Voce errou! O seu chute foi menor que o numero secreto")
+    
 print("Fim do Jogo!")
