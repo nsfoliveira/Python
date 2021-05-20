@@ -19,7 +19,7 @@ while(tentativas > 0):
     if(maior):
       print("Voce errou! O seu chute foi maior que o numero secreto")
   elif(menor):
-    print("Voce errou! O seu chute foi menor que o numero secreto")
+        print("Voce errou! O seu chute foi menor que o numero secreto")
   tentativas = tentativas - 1
     
 print("Fim do Jogo!")
