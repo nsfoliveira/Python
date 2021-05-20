@@ -4,9 +4,10 @@ print("********************************")
 
 num_secreto = 28
 total_tentativa = 3
+rodada  = 1
 
-while(total_tentativa > 0):
-    print("\nNúmero de tentativas possíveis: ", total_tentativa)
+while(rodada <= total_tentativa):
+    print("\nTentativa ", rodada, " de ", total_tentativa)
     chute = input("Digite seu chute: ")
     print("Você digito: ", chute)
     chute_convert = int(chute)
@@ -23,6 +24,6 @@ while(total_tentativa > 0):
         elif(menorq):
             print("Você errou! Seu chute foi menor que o número secreto")
 
-    total_tentativa = total_tentativa - 1
+    rodada = rodada + 1
 
-print("Fim do Jogo!")
+print("\nFim do Jogo!\n")
