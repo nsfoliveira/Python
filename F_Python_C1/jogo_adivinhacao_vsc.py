@@ -26,4 +26,4 @@ while(rodada <= total_tentativa):
 
     rodada = rodada + 1
 
-print("\nFim do Jogo!\n")
+print("\nFim do Jogo!!\n")
