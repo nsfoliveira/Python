@@ -1,4 +1,4 @@
-print("********************************")
+print("\n********************************")
 print("Bem Vindo ao jogo de Advinhação!")
 print("********************************")
 
@@ -7,7 +7,7 @@ total_tentativa = 3
 rodada  = 1
 
 while(rodada <= total_tentativa):
-    print("\nTentativa ", rodada, " de ", total_tentativa)
+    print("\nTentativa {} de {}".format(rodada, total_tentativa)) ##string interpolation
     chute = input("Digite seu chute: ")
     print("Você digito: ", chute)
     chute_convert = int(chute)
