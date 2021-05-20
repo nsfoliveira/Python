@@ -3,6 +3,7 @@ print("Bem vindo ao Jogo de Adivinhacao!")
 print("---------------------------------")
 
 num_sec = 28
+tentativas = 3
 
 while(tentativas > 0):
   chute = input("Por favor, digite um numero: ")
