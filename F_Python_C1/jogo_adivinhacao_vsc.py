@@ -18,6 +18,7 @@ for rodada in range(1, total_tentativa + 1):
     
     if(acertou):
         print("Você acertou!")
+        break #parar o laço quando acertar
     else:
         if(maiorq):
             print("Você errou! Seu chute foi maior que o número secreto")
