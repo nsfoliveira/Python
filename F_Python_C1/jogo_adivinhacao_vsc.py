@@ -8,9 +8,13 @@ rodada  = 1
 
 for rodada in range(1, total_tentativa + 1):
     print("\nTentativa {} de {}".format(rodada, total_tentativa)) #string interpolation
-    chute = input("Digite seu chute: ")
+    chute = input("Digite um número de 1 a 100: ")
     print("Você digito: ", chute)
     chute_convert = int(chute)
+
+    if(chute <1):
+        print("Número Inválido. Você deve digitar um número de 1 a 100")
+        continue #ele não quebra o laço
 
     acertou = chute_convert == num_secreto
     maiorq  = chute_convert > num_secreto
