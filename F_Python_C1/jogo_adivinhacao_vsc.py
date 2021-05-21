@@ -6,7 +6,7 @@ num_secreto = 28
 total_tentativa = 3
 rodada  = 1
 
-while(rodada <= total_tentativa):
+for rodada in range(1, total_tentativa + 1):
     print("\nTentativa {} de {}".format(rodada, total_tentativa)) #string interpolation
     chute = input("Digite seu chute: ")
     print("Você digito: ", chute)
@@ -24,6 +24,5 @@ while(rodada <= total_tentativa):
         elif(menorq):
             print("Você errou! Seu chute foi menor que o número secreto")
 
-    rodada = rodada + 1
-
+  
 print("\nFim do Jogo!!\n")
