@@ -12,7 +12,7 @@ for rodada in range(1, total_tentativa + 1):
     print("Você digito: ", chute)
     chute_convert = int(chute)
 
-    if(chute <1):
+    if(chute < 1 or > 100):
         print("Número Inválido. Você deve digitar um número de 1 a 100")
         continue #ele não quebra o laço
 
