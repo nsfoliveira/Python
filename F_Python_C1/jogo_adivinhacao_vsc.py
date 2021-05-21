@@ -23,7 +23,7 @@ for rodada in range(1, total_tentativa + 1):
     menorq  = chute_convert < num_secreto
     
     if(acertou):
-        print("Você acertou!")
+        print("Você ganhou!!")
         break #parar o laço quando acertar
     else:
         if(maiorq):
