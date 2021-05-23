@@ -1,10 +1,13 @@
+import random
+
 print("\n********************************")
 print("Bem Vindo ao jogo de Advinhação!")
 print("********************************")
 
-num_secreto = 28
+num_secreto = round(random.uniform(1, 100))
 total_tentativa = 3
 rodada  = 1
+
 
 for rodada in range(1, total_tentativa + 1):
     print("\nTentativa {} de {}".format(rodada, total_tentativa)) #string interpolation
