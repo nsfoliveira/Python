@@ -31,5 +31,6 @@ for rodada in range(1, total_tentativa + 1):
         elif(menorq):
             print("Você errou! Seu chute foi menor que o número secreto")
 
-  
+
+print ("\nNúmero Secreto é {}".format(num_secreto))
 print("\nFim do Jogo!!\n")
