@@ -6,6 +6,7 @@ print("********************************")
 
 num_secreto = round(random.uniform(1, 100))
 total_tentativa = 0
+pontuacao_inicial = 1000
 
 print("\nQual nível de dificuldade?")
 print("(1) Fácil (2) Médio (3) Difícil")
@@ -36,14 +37,19 @@ for rodada in range(1, total_tentativa + 1):
     menorq  = chute_convert < num_secreto
     
     if(acertou):
-        print("Você ganhou!!")
+        print("\nVocê fez {} pontos".format(pontuacao_inicial))
         break #parar o laço quando acertar
     else:
         if(maiorq):
-            print("Você errou! Seu chute foi maior que o número secreto")
+            print("\nVocê errou! Seu chute foi maior que o número secreto")
+            pontuacao_perdida = (abs(num_secreto - chute_convert))
+            pontuacao_inicial = pontuacao_inicial - pontuacao_perdida
+            if(rodada == total_tentativa):
+                print("\nO numero secreto era {}. Pontos {}".format(num_secreto, pontuacao_inicial))
         elif(menorq):
             print("Você errou! Seu chute foi menor que o número secreto")
+            if(rodada == total_tentativa):
+                print("\nO numero secreto era {}. Pontos {}".format(num_secreto, pontuacao_inicial))
 
-
-print ("\nNúmero Secreto é {}".format(num_secreto))
+            
 print("\nFim do Jogo!!\n")
