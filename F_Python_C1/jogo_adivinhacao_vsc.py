@@ -5,9 +5,19 @@ print("Bem Vindo ao jogo de Advinhação!")
 print("********************************")
 
 num_secreto = round(random.uniform(1, 100))
-total_tentativa = 3
-rodada  = 1
+total_tentativa = 0
 
+print("\nQual nível de dificuldade?")
+print("(1) Fácil (2) Médio (3) Difícil")
+
+nivel = int(input("Digita o nível: "))
+
+if(nivel == 1):
+    total_tentativa = 15
+elif(nivel == 2):
+    total_tentativa = 10
+else:
+    total_tentativa = 5
 
 for rodada in range(1, total_tentativa + 1):
     print("\nTentativa {} de {}".format(rodada, total_tentativa)) #string interpolation
