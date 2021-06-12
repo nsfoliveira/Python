@@ -13,11 +13,11 @@ def jogar():
 
         for letra in palavra_secreta:
             if(chute == letra):
-                print(chute)
-
+                print("Encontrei a letra {} na posição {}")
+            index = index + 1
         print("jogando...")
 
     print("Fim do jogo")
 
-if(__name__ == "__main__"):d
+if(__name__ == "__main__"):
     jogar()
