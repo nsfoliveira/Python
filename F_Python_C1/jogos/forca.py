@@ -3,9 +3,13 @@ def jogar ():
     print("***Bem vindo ao jogo da Forca!***")
     print("*********************************")
 
-    palavra_secreta = "dilminha"
+    palavra_secreta = "Dilminha"
+    letras_acertadas = ["_","_","_","_","_","_","_","_",]
+
     enforcou = False
     acertou = False
+
+    print(letras_acertadas)
 
     while (not enforcou and not acertou):
 
@@ -16,9 +20,10 @@ def jogar ():
 
         for letra in palavra_secreta:
             if (chute.upper() == letra.upper()): #convertendo as variaveis em maiusculas
-                print("Encontrei a letra {} na posição {}".format(letra, index))
+                letras_acertadas[index] = letra
             index = index + 1
-        print("jogando...")
+
+        print(letras_acertadas)
 
     print("Fim do jogo")
 
