@@ -3,8 +3,8 @@ def jogar ():
     print("***Bem vindo ao jogo da Forca!***")
     print("*********************************")
 
-    palavra_secreta = "dilminha".upper()
-    letras_acertadas = ["_","_","_","_","_","_","_","_",]
+    palavra_secreta = "dilma".upper()
+    letras_acertadas = ["_" for letra in palavra_secreta] #List Comprehension
 
     erros = 0
 
