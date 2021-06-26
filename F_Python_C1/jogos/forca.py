@@ -1,54 +1,55 @@
-def jogar ():
+import random
+
+def jogar():
     print("*********************************")
     print("***Bem vindo ao jogo da Forca!***")
     print("*********************************")
 
-    def jogar ():
 
-        arquivo = open("palavra.txt", "r")
-        palavras = []
+    arquivo = open("palavra.txt", "r")
+    palavra = []
 
-        for linha in arquivo:
-            palavras.append(linha)
+    for linha in arquivo:
+        linha = linha.strip()
+        palavra.append(linha)
 
-        arquivo.close()
+    arquivo.close()
 
-    palavra_secreta = "dilma".upper()
-    letras_acertadas = ["_" for letra in palavra_secreta] #List Comprehension
+    numero = random.randrange(0,len(palavra))
+    palavra_secreta = palavras[numero].upper()
 
+    letras_acertadas = ["_" for letra in palavra_secreta]
+
+    enforcou = False
+    acertou = False
     erros = 0
 
-    print(len(palavra_secreta))
     print(letras_acertadas)
 
-    while (True):
+    while(not enforcou and not acertou):
 
-        chute = input("Qual a letra? ")
-        chute = chute.strip().upper()  # para tratar a variável caso tenha espaços
+        chute = input("Qual letra? ")
+        chute = chute.strip().upper()
 
         if(chute in palavra_secreta):
-            index = 0  # posicionador
+            index = 0
             for letra in palavra_secreta:
-                if (chute == letra):
+                if(chute == letra):
                     letras_acertadas[index] = letra
                 index += 1
-
         else:
             erros += 1
 
-        if(erros == 6):
-            break
-        if("_" not in letras_acertadas):
-            break
+        enforcou = erros == 6
+        acertou = "_" not in letras_acertadas
         print(letras_acertadas)
 
-    if("_"not in letras_acertadas):
-        print("Você ganhou!")
-    else:
-        print("Você perdeu")
 
+    if(acertou):
+        print("Você ganhou!!")
+    else:
+        print("Você perdeu!!")
     print("Fim do jogo")
 
-
-if (__name__ == "__main__"):
+if(__name__ == "__main__"):
     jogar()
