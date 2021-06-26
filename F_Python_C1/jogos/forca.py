@@ -3,6 +3,12 @@ def jogar ():
     print("***Bem vindo ao jogo da Forca!***")
     print("*********************************")
 
+    def jogar ():
+
+        arquivo = open("palavra.txt", "r")
+
+        arquivo.close()
+
     palavra_secreta = "dilma".upper()
     letras_acertadas = ["_" for letra in palavra_secreta] #List Comprehension
 
