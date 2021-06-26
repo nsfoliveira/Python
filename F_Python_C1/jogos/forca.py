@@ -6,6 +6,10 @@ def jogar ():
     def jogar ():
 
         arquivo = open("palavra.txt", "r")
+        palavras = []
+
+        for linha in arquivo:
+            palavras.append(linha)
 
         arquivo.close()
 
