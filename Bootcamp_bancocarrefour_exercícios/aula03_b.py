@@ -1,7 +1,9 @@
 a = int(input('Insira um valor: '))
-resto = a % 2
+b = int(input('Insira um valor: '))
+resto_a = a % 2
+resto_b = b % 2
 
-if (a == 0):
-    print('O numero é par')
+if (resto_b == 0) or (resto_b == 0):
+    print('Foi digitado um numero par')
 else:
-    print('O numero é impar')
+    print('Não foi digitado nenhum numero par')
