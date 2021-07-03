@@ -1,3 +1,6 @@
-from funcao_conta import cria_conta
-conta1 = cria_conta(6587, "Marco", 55.00, 1800)
-conta1["numero"]
+from funcao_conta import cria_conta, deposita, saca, extrato
+conta = cria_conta(123, "Natalia", 150.0, 1000.0)
+deposita(conta, 300.0)
+extrato(conta)
+saca(conta, 100.0)
+extrato(conta)
