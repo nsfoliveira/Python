@@ -1,17 +1,11 @@
 from Classe import Conta
-conta = Conta(123, "Nico", 55.5, 1000.0)
-conta2 = Conta(321, "Marcos", 100.0, 1000.0)
-conta.titular
-conta2.titular
+
+conta = Conta(182, "Natália", 60.00, 2000.00)
+
+conta1 = Conta(1985, "Marco", 150.00, 18000.00)
+
+conta3 = Conta(2020, "Dilma", 1500.00, 500.00)
+
+conta1.transfere(50.00, conta)
 
 conta.extrato()
-
-conta2.extrato()
-
-conta.deposita(15.0)
-
-conta.extrato()
-
-conta.saca(10.0)
-conta.extrato()
-
