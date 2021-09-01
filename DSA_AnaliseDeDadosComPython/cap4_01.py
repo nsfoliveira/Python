@@ -12,3 +12,13 @@ print (agora)
 tempo = datetime.time(7,8,12)
 
 print (tempo)
+
+from functools import reduce
+
+lista = [28,35,1]
+
+def soma(a,b):
+    x = a +b
+    return x
+
+reduce(soma, lista)
