@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b5f80b35-933a-43b4-a90d-37cdd722bcca" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Lab03/Lab03_JogoDaForca.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lab03/Lab03_JogoDaForca.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab03/forca_v1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab03/palavras.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Lab03/palavras.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +23,12 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Lab03" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Workspace_Natália\Python\DSA_AnaliseDeDadosComPython\Lab03" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="Lab03_JogoDaForca" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">

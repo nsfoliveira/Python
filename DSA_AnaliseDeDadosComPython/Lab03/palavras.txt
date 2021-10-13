@@ -1,3 +1,7 @@
 bola
 casa
 massa
+cola
+bolo
+livro
+estudo
